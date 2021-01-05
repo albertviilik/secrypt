@@ -13,6 +13,7 @@
 		1943413225A3DA0700398CAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1943413125A3DA0700398CAC /* Preview Assets.xcassets */; };
 		1943413E25A3DA0700398CAC /* secryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943413D25A3DA0700398CAC /* secryptTests.swift */; };
 		1943414925A3DA0700398CAC /* secryptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943414825A3DA0700398CAC /* secryptUITests.swift */; };
+		1943415D25A3DF3400398CAC /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943415C25A3DF3400398CAC /* AppModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		1943414425A3DA0700398CAC /* secryptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = secryptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1943414825A3DA0700398CAC /* secryptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secryptUITests.swift; sourceTree = "<group>"; };
 		1943414A25A3DA0700398CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1943415C25A3DF3400398CAC /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +98,10 @@
 		1943412925A3DA0500398CAC /* secrypt */ = {
 			isa = PBXGroup;
 			children = (
+				1943415B25A3DEDD00398CAC /* view */,
+				1943415A25A3DED600398CAC /* model */,
+				1943415925A3DECE00398CAC /* controller */,
 				1943412A25A3DA0500398CAC /* secryptApp.swift */,
-				1943412C25A3DA0500398CAC /* ContentView.swift */,
 				1943412E25A3DA0700398CAC /* Assets.xcassets */,
 				1943413325A3DA0700398CAC /* Info.plist */,
 				1943413425A3DA0700398CAC /* secrypt.entitlements */,
@@ -130,6 +134,29 @@
 				1943414A25A3DA0700398CAC /* Info.plist */,
 			);
 			path = secryptUITests;
+			sourceTree = "<group>";
+		};
+		1943415925A3DECE00398CAC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		1943415A25A3DED600398CAC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1943415C25A3DF3400398CAC /* AppModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1943415B25A3DEDD00398CAC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1943412C25A3DA0500398CAC /* ContentView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1943412D25A3DA0500398CAC /* ContentView.swift in Sources */,
+				1943415D25A3DF3400398CAC /* AppModel.swift in Sources */,
 				1943412B25A3DA0500398CAC /* secryptApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
